@@ -143,3 +143,11 @@ footer{background:var(--surface);border-top-color:var(--line);margin-top:3rem}
 .nav-links a{font-size:1rem}
 .scholar-heading{font-size:1rem;font-weight:500;white-space:nowrap}
 @media(min-width:701px) and (max-width:850px){.nav-links{gap:1.4rem}.nav-inner{padding-inline:1.5rem}}
+
+/* Subtle dividers between social profile links. */
+.profile-links > a + a,
+.footer-links > li + li{position:relative}
+.profile-links > a + a::before,
+.footer-links > li + li::before{content:"";position:absolute;top:50%;height:1em;border-left:1px solid #d4d9dd;transform:translateY(-50%);pointer-events:none}
+.profile-links > a + a::before{left:-.275rem}
+.footer-links > li + li::before{left:-.75rem}
