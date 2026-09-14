@@ -148,6 +148,7 @@ footer{background:var(--surface);border-top-color:var(--line);margin-top:3rem}
 .profile-links > a + a,
 .footer-links > li + li{position:relative}
 .profile-links > a + a::before,
-.footer-links > li + li::before{content:"";position:absolute;top:50%;height:1em;border-left:1px solid #d4d9dd;transform:translateY(-50%);pointer-events:none}
-.profile-links > a + a::before{left:-.275rem}
+.footer-links > li + li::before{content:"";position:absolute;top:50%;height:1em;border-left:1px solid #b8c2ca;transform:translateY(-50%);pointer-events:none}
+.profile-links{column-gap:.9rem}
+.profile-links > a + a::before{left:-.45rem}
 .footer-links > li + li::before{left:-.75rem}
